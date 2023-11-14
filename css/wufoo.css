@@ -1,0 +1,77 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : 
+ Author : Taylor Steele
+ URL : http://
+
+ Last Updated : 
+
+- - - - - - - - - - - - - - - - - - - - - */
+:root {
+    --NagiosBlue: #4D89F9;
+    --BackgroundBlue: #00061B;
+    --MatteBlueDark:#141A2D;
+    --Teal:#60D2D2;
+    --Text1:#d9e6ff;
+    --Text2:#dfdfdf;
+  }
+  
+
+
+/* Logo */
+#logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
+}
+
+/* Backgrounds */
+html{background-image:none;background-color:var(--BackgroundBlue);gap:15px;}
+#logo{background-image:none;background-color:var(--BackgroundBlue)}
+#container{background:#FFFFFF00;gap:15px;}
+.wufoo input.text, .wufoo textarea.textarea, select{background-color: initial;
+    background-image: linear-gradient(rgba(244, 247, 251, 0.256), rgba(34, 34, 34, .125), rgba(34, 34, 34, .376), rgba(34, 34, 34, .376), rgba(34, 34, 34, .125), rgba(244, 247, 251, .256));
+    border: 1px solid #F4F7FB;
+    border-radius: 5px; padding:5px 10px;}
+.wufoo .focused{border: 2px solid #F4F7FB; padding: 10px;;}
+.wufoo .instruct{background-color:var(--MatteBlueDark);}
+
+/* Borders */
+#container{border:0 solid #60D2D21a}
+.wufoo .info{border-bottom:1px dotted #60D2D21a;padding: 10px;}
+.wufoo .instruct{border:1px solid #60D2D21a; padding: 10px;} 
+
+/* Typography */
+.wufoo .info h2{font-size:160%;font-family:inherit;color:#fff}
+.wufoo .info div{font-size:95%;font-family:inherit;color:#fff}
+.wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF00;color:#ffffff;}
+.wufoo .section div{font-size:85%;font-family:inherit;color:#ffffff}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:var(--Text2);}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:var(--Text2);}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#ffffff}
+.wufoo label.choice{color:var(--Text2);}
+.wufoo .instruct{font-size:80%;font-family:inherit;color:var(--Text2);}
+li{padding: 8px; display: flex; gap: 15px;}
+option.active {
+    /* Styling for active dropdown options */
+    display: block; }
+option div:hover {
+    /* Styling for hover effect on dropdown options */
+    background-color: #4D89F9;
+    color: #fff; }
+option{
+    background-color: var(--MatteBlueDark); }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #424242; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #686868; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4d89f9; 
+  }
