@@ -25,13 +25,62 @@
         </div>
 
         <div id="hero">
-            <div class="main-width typing-container">
-                <h1>Web Development</h1>
-                <span id="cursor"></span>
-                <p id="text"></p>
+            <div class="main-width" style="display: flex; flex-flow: row;">
+                <div style="width:50%;">
+                </div>
+                <div class="typing-container" style="width:50%;">
+                    <h1>Web Development</h1>
+                    <span id="cursor"></span>
+                    <h1 id="text"></h1>
+                </div> 
             </div>
         </div>
+    <div class="main-width">
+        <div style="width:50%;">
+        <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'front-end')">Front-End Development</button>
+                <button class="tablinks" onclick="openTab(event, 'back-end')">Back-End Development</button>
+                <button class="tablinks" onclick="openTab(event, 'design')">Design</button>
+            </div>
+        </div>
+  
+        <div style="width:50%;">
+            <!-- Tab content -->
+            <div id="front-end" class="tabcontent">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <!-- <li>Responsive design </li>
+                    Front-End Frameworks (e.g., React.js, Angular, Vue.js) -->
+                </ul>
+            </div>
+  
+            <div id="back-end" class="tabcontent">
+                <h3>Back-End</h3>
+                <ul>
+                    <li>Database Managment</li>
+                    <li>PHP</li>
+                    <li>MYSQL</li>
+                    <li>Linux</li>
+                    <!-- Back-End Frameworks (e.g., Express.js, Django, Ruby on Rails) -->
+                </ul>
+            </div>
+  
+            <div id="design" class="tabcontent">
+                <h3>Design</h3>
+                <ul>
+                    <li>Stuff</li>
+                    <li>Things</li>
+                    <li>More Stuff</li>
+                    <li>Thing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <script src="main.js"></script>
     </body>
-<script src="main.js"></script>
 </html>

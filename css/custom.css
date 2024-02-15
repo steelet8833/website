@@ -8,23 +8,28 @@
 
 - - - - - - - - - - - - - - - - - - - - - */
 :root {  /* Declare color variables here*/
-    --main-dark: #fff;
-    --main-light: #121212;
+    --background-color: #fff;
+    --text-color: #121212;
+    --secondary-neutral: #bdbdbd;
   } 
 
   .dark-mode{
-    --main-light: #fff;
-    --main-dark: #121212;
+    --text-color: #fff;
+    --background-color: #121212;
+    --secondary-neutral: #616161;
   }
+  
   
   body{
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-dark);
-    color: var(--main-light);
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
+
+  
   #header{
     display: flex;
     flex-flow: row;
@@ -54,7 +59,7 @@
     position: absolute;
     width: 8px;
     height: 24px;
-    background-color: #000;
+    background-color: var(--text-color);
     animation: blink 0.7s infinite;
 }
 
@@ -93,7 +98,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: var(--secondary-neutral);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -105,17 +110,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--text-color);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    background-color: var(--secondary-neutral);
   }
   
   input:checked + .slider:before {
@@ -132,3 +133,45 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+.tablinks{
+  color: var(--text-color);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 24px 14px 0px;
+  transition: 0.3s;
+}
+
+.tab button{
+  color: var(--secondary-neutral);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: var(--secondary-neutral);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: var(--text-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: var(--text-color);
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
